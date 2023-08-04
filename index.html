@@ -1,0 +1,39 @@
+<html>
+    <header>
+        <script type="text/javascript" src="./jquery.js"></script>
+        <script type="text/javascript" src="./script.js" defer></script>
+        <link rel="stylesheet" href="./style.css">
+    </header>
+
+    <body>
+
+        <div class="wrapper">
+
+            <video autoplay id="myVideo" autoplay poster="poster.png" onended="switchIdle()">
+                <source src="videos/idle.mp4"
+                    type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <video autoplay id="idleVideo" autoplay poster="poster.png" muted loop>
+                <source src="/videos/idle.mp4"
+                    type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <button id="endInteraction" onclick="redirectPage()">End Interaction</button>
+        </div>
+
+    </body>
+
+    <!-- DIALOGFLOW MESSENGER - REPLACE WITH YOURS -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Jack"
+  agent-id="6e53cb2b-59fd-45ec-bec3-e6c3c7781b9f"
+  language-code="en"
+></df-messenger>
+    <!-- END OF DIALOGFLOW MESSENGER -->
+
+</html>
