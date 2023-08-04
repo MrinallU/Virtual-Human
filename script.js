@@ -1,5 +1,5 @@
 
-//find dfMessenger declared in html file
+//find dfMessenger declared in html file (test)
 const dfMessenger = document.querySelector('df-messenger');
 
 //listen for response
