@@ -1,9 +1,8 @@
-
 // find dfMessenger declared in html file (test)
-const dfMessenger = document.querySelector('df-messenger');
+const dfMessenger = document.querySelector("df-messenger");
 
 // listen for response
-dfMessenger.addEventListener('df-response-received', function(event) {
+dfMessenger.addEventListener("df-response-received", function (event) {
   // set session id to send to qualtrics later
   sessionID = dfMessenger.getAttribute("session-id");
 
@@ -55,6 +54,6 @@ function changeVid(URL) {
 
 function redirectPage() {
   // REPLACE QUALTRICS SURVEY URL HERE
-  var url = "https://ufl.qualtrics.com/jfe/form/SV_1S7mgXdRxlo22ay"
+  var url = "https://ufl.qualtrics.com/jfe/form/SV_1S7mgXdRxlo22ay";
   window.open(url);
 }
